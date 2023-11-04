@@ -1,0 +1,769 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins&display=swap');
+
+@keyframes derecha {
+    0%{
+        transform: translateX(-900px);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.9;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #424040;
+    animation: derecha 1.5s ease;
+}
+
+h2{
+    color: red;
+}
+
+.cabezera{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    height: 100px;
+    transition: all 0.4s ease;
+    animation: derecha 2s ease;
+}
+
+.logo{
+    position: relative;
+    left: 0;
+}
+
+.logo img{
+    width: 120px;
+    margin: 6px 20px;
+}
+.navegador{
+    position: absolute;
+    right: 0;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 30px 10px;
+}
+
+#btn{
+    position: absolute;
+    color: white;
+    font-size: 60px;
+    width: auto;
+    display: flex;
+    justify-content: right;
+    margin: 17px 0 0 75%;
+    visibility: collapse;
+    cursor: pointer;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.4vw;
+    letter-spacing: 0.7px;
+    border: 3px solid rgb(240, 85, 24);
+    padding: 7px 10px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+nav ul li a:hover{
+    box-shadow: 3px 3px 10px red;
+    background-color: rgb(240, 85, 24);
+    color: white;
+}
+/* imagenes con el efecto parallax */
+.parallax-1{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imagenes/fondo\ JS.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    transition: all 0.8s ease;
+}
+
+.texto-hero{ /*texto del centro*/
+    text-align: center;
+    border: 5px solid rgb(240, 68, 16);
+    padding: 5px 20px;
+    border-radius: 10px;
+    transition: all 0.6s ease;
+    font-size: 2vw;
+}
+
+.texto-hero a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: all 0.2s ease;
+}
+
+.texto-hero a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.texto-hero:hover{
+    font-size: 2.5vw;
+    box-shadow: 3px 3px 10px red;
+    background-color: rgb(240, 68, 16);
+}
+/* contenido */
+#promo{
+    width: 90%;
+}
+
+article{
+    margin: 40px auto;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1vh;
+    overflow: hidden;
+    flex-direction: column;
+    animation: derecha 2.5s ease;
+    color: white;
+}
+
+.item1{
+    font-size: 4vw;
+    color: orangered;
+    height: auto;
+    text-align: center;
+    font-weight: 800;
+}
+
+.item2{
+    font-size: 1.3vw;
+    height: auto;
+    text-align: justify;
+}
+
+.item3,
+.item6,
+.item9{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+#img3,
+#img8,
+#img10{
+    width: 40vw;
+    border: 2px solid orangered;
+}
+
+.item5,
+.item7,
+.item11{
+    font-size: 1.3vw;
+    height: auto;
+    width: 40vw;
+    text-align: justify;
+}
+
+.center{
+    text-align: center;
+}
+
+.item12{
+    font-size: 1.3vw;
+    height: auto;
+    width: 100%;
+    text-align: justify;
+}
+
+.item12 ul{
+    list-style-type: none;
+    margin: 2% 0 0 10%;
+}
+
+.item12 a{
+    text-decoration: none;
+    color: rgb(24, 135, 204);
+    transition: all 0.2s ease;
+}
+
+.item12 a:hover{
+    color:white;
+    background-color: rgb(24, 135, 204);
+    border-radius: 5px;
+    padding: 0 2px;
+}
+
+footer{
+    background-color: orangered;
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info{
+    text-align: center;
+    font-size: 40px;
+}
+
+.conc{
+    font-size: 2vw;
+    font-weight: bold;
+    color: white;
+}
+
+.info a{
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.info a:hover{
+    font-size: 50px;
+}
+
+.item13{
+    margin: 5px auto;
+    text-align: center;
+}
+
+.item14{
+    text-align: right;
+} 
+
+.linkUP{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    margin: 0 1.5vw;
+    font-size: 1.5vw ;
+    transition: all 0.5s ease;
+}
+
+.linkUP:hover{
+    font-size: 1.7vw;
+}
+
+address{
+    display: flex;
+    align-items: center;
+    font-size: 1.7vw;
+    color: white;
+}
+
+
+/*responsive*/
+/* Portatil 1024px */
+@media (width <= 1024px) {
+    .logo img{
+        width: 100px;
+        margin: 13px 20px;
+    }
+
+    .texto-hero{
+        font-size: 30px;
+    }
+
+    .texto-hero:hover{
+        font-size: 30px;
+    }
+
+    nav ul li a{
+        font-size: 18px;
+    }
+
+    .item1{
+        font-size: 40px;
+    }
+
+    .item5, .item7, .item11{
+        font-size: 18px;
+        width: auto;
+    }
+
+    .item2{
+        font-size: 20px;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    .item3, .item6, .item9{
+        align-items: center;
+    }
+
+    #img3, #img8, #img10{
+        width: 380px;
+    }
+
+    .item12{
+        font-size: 17px;
+    }
+
+    .conc{
+        font-size: 25px;
+    }
+
+    address{
+        font-size: 20px;
+    }
+
+    .linkUP{
+        font-size: 19px;
+    }
+
+    .linkUP:hover{
+        font-size: 15px;
+    }
+}
+
+/* Tablet-768 */
+@media (width <= 768px) {
+    .logo img{
+        width: 100px;
+        margin: 13px 20px;
+    }
+
+    .texto-hero{
+        background-color: rgb(240, 68, 16);
+        font-size: 30px;
+    }
+
+    .texto-hero:hover{
+        font-size: 30px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+    }
+
+    .item1{
+        font-size: 40px;
+    }
+
+    .item5, .item7, .item11{
+        font-size: 20px;
+        width: auto;
+    }
+
+    .item2{
+        font-size: 23px;
+    }
+
+    .item3, .item6, .item9{
+        flex-direction: column;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    #img3, #img8, #img10{
+        width: 580px;
+    }
+
+    .item12{
+        font-size: 20px;
+    }
+
+    .conc{
+        font-size: 30px;
+    }
+
+    address{
+        font-size: 23px;
+    }
+
+    .linkUP{
+        font-size: 19px;
+    }
+
+    .linkUP:hover{
+        font-size: 15px;
+    }
+}
+
+/* Movil L-425px */
+@media (width <= 425px) {
+    #btn{
+        visibility: visible;
+    }
+
+    .logo img{
+        width: 100px;
+        margin: 13px 20px;
+    }
+
+    .texto-hero{
+        background-color: rgb(240, 68, 16);
+        font-size: 20px;
+    }
+
+    .texto-hero:hover{
+        font-size: 20px;
+    }
+
+    .item1{
+        font-size: 40px;
+    }
+
+    .item5, .item7, .item11{
+        font-size: 18px;
+        width: auto;
+    }
+
+    .item2{
+        font-size: 20px;
+    }
+
+    .item3, .item6, .item9{
+        flex-direction: column;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    #img3, #img8, #img10{
+        width: 335px;
+    }
+
+    .item12{
+        font-size: 15px;
+    }
+
+    .conc{
+        font-size: 25px;
+    }
+
+    address{
+        font-size: 20px;
+    }
+
+    .linkUP{
+        font-size: 15px;
+    }
+
+    .linkUP:hover{
+        font-size: 15px;
+    }
+    /*navegador dos*/
+    .navegador{
+        position: fixed;
+        left: 100%;
+        margin: 100px 0 0 0;
+        background-color: #e4e71c;
+        width: 100%;
+        height: calc(100% - 100px);
+        text-align: center;
+        padding: 0;
+        transition: left 0.8s ease;
+        overflow-y: auto;
+        z-index: 2;
+    }
+
+    .navegador ul{
+        flex-direction: column;
+    }
+
+    .navegador ul li{
+        margin: 40px 0 0 0;
+    }
+
+    .navegador ul li a{
+        color: white;
+        font-size: 25px;
+        padding: 0;
+        border: none;
+        font-weight: bolder;   
+    }
+
+    .navegador ul li a:hover{
+        box-shadow: none;
+        background-color: none;
+        color: white;
+    }
+
+    .navegador_activo{
+        left: 0;
+    }
+
+    .cuerpo_on{
+        overflow-y: hidden;
+    }
+
+    .cabezera_on{
+        background-color: rgb(165, 165, 164);
+    }
+
+    .footer_on{
+        z-index: -2;
+    }
+}
+
+/* Movil M-375 */
+@media (width <= 375px) {
+    #btn{
+        visibility: visible;
+    }
+
+    .logo img{
+        width: 100px;
+        margin: 13px 20px;
+    }
+
+    .texto-hero{
+        background-color: rgb(240, 68, 16);
+        font-size: 20px;
+    }
+
+    .texto-hero:hover{
+        font-size: 20px;
+    }
+
+    .item1{
+        font-size: 40px;
+    }
+
+    .item5, .item7, .item11{
+        font-size: 16px;
+        width:300px;
+    }
+
+    .item2{
+        font-size: 18px;
+    }
+
+    .item3, .item6, .item9{
+        flex-direction: column;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    #img3, #img8, #img10{
+        width: 290px;
+    }
+
+    .item12{
+        font-size: 15px;
+    }
+
+    .conc{
+        font-size: 25px;
+    }
+
+    address{
+        font-size: 20px;
+    }
+
+    .linkUP{
+        font-size: 15px;
+    }
+
+    .linkUP:hover{
+        font-size: 15px;
+    }
+    /*navegador dos*/
+    .navegador{
+        position: fixed;
+        left: 100%;
+        margin: 100px 0 0 0;
+        background-color: #e4e71c;
+        width: 100%;
+        height: calc(100% - 100px);
+        text-align: center;
+        padding: 0;
+        transition: left 0.8s ease;
+        overflow-y: auto;
+        z-index: 2;
+    }
+
+    .navegador ul{
+        flex-direction: column;
+    }
+
+    .navegador ul li{
+        margin: 30px 0 0 0;
+    }
+
+    .navegador ul li a{
+        color: white;
+        font-size: 25px;
+        padding: 0;
+        border: none;
+        font-weight: bolder;   
+    }
+
+    .navegador ul li a:hover{
+        box-shadow: none;
+        background-color: none;
+        color: white;
+    }
+
+    .navegador_activo{
+        left: 0;
+    }
+
+    .cuerpo_on{
+        overflow-y: hidden;
+    }
+
+    .cabezera_on{
+        background-color: rgb(165, 165, 164);
+    }
+
+    .footer_on{
+        z-index: -2;
+    }
+}
+
+/* Movil S-320px */
+@media (width <= 320px) {
+    #btn{
+        visibility: visible;
+    }
+
+    .logo img{
+        width: 100px;
+        margin: 13px 20px;
+    }
+
+    .texto-hero{
+        background-color: rgb(240, 68, 16);
+        font-size: 25px;
+        padding: 5px 10px;
+    }
+
+    .texto-hero:hover{
+        font-size: 20px;
+    }
+
+    .item1{
+        font-size: 40px;
+    }
+
+    .item5, .item7, .item11{
+        font-size: 15px;
+        width: 250px;
+    }
+
+    .item2{
+        font-size: 15px;
+    }
+
+    .item3, .item6, .item9{
+        flex-direction: column;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    #img3, #img8, #img10{
+        width: 250px;
+    }
+
+    .item12{
+        font-size: 15px;
+    }
+
+    .conc{
+        font-size: 25px;
+    }
+
+    address{
+        font-size: 20px;
+    }
+
+    .linkUP{
+        font-size: 15px;
+    }
+
+    .linkUP:hover{
+        font-size: 15px;
+    }
+    /*navegador dos*/
+    .navegador{
+        position: fixed;
+        left: 100%;
+        margin: 100px 0 0 0;
+        background-color: #e4e71c;
+        width: 100%;
+        height: calc(100% - 100px);
+        text-align: center;
+        padding: 0;
+        transition: left 0.8s ease;
+        overflow-y: auto;
+        z-index: 2;
+    }
+
+    .navegador ul{
+        flex-direction: column;
+    }
+
+    .navegador ul li{
+        margin: 30px 0 0 0;
+    }
+
+    .navegador ul li a{
+        color: white;
+        font-size: 20px;
+        padding: 0;
+        border: none;
+        font-weight: bolder;   
+    }
+
+    .navegador ul li a:hover{
+        box-shadow: none;
+        background-color: none;
+        color: white;
+    }
+
+    .navegador_activo{
+        left: 0;
+    }
+
+    .cuerpo_on{
+        overflow-y: hidden;
+    }
+
+    .cabezera_on{
+        background-color: rgb(165, 165, 164);
+    }
+
+    .footer_on{
+        z-index: -2;
+    }
+}
